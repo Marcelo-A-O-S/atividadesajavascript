@@ -1,0 +1,23 @@
+.Home
+{
+    display: flex;
+}
+.CadastrarS
+{
+    display: none;
+}
+.VerificarS
+{
+    display: none;
+}
+.ListarS{
+    display: none;
+}
+.ModificarS
+{
+    display: none;
+}
+.FiltrarS
+{
+    display: none;
+}

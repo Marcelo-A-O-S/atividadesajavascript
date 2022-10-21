@@ -1,0 +1,19 @@
+.tabela
+{
+    align-items: inherit;
+    
+    
+    border-spacing: 35px;
+    
+    vertical-align: top;
+    height: auto;
+}
+.colunaP
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+.colunaT
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
