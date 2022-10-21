@@ -1,12 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Atividade SA3</title>
 </head>
 <body>
-    <h1>Teste</h1>
+    <header class="flex-container layout">
+        <nav class="navbar" onclick="">
+            <ul class="logo">
+                Atividade SA3
+            </ul>
+            <ul class="Menu">
+                <li class ="nav-item"><a href="#" onclick="Home()">Home</a></li>
+                <li class ="nav-item"><a  onclick="CadastrarS()" href="#">Cadastrar</a></li >
+                <li class ="nav-item"><a onclick="VerificarS()" href="#">Verificar Usuario</a></li>
+                <li class ="nav-item"><a onclick="ModificarS()" href="#">Modificar Usuario</a></li>
+                <li class ="nav-item"><a onclick="FiltrarS()" href="#">Filtrar Usuario</a></li>
+                <li class ="nav-item"><a onclick="ListarS()" href="#">Lista de Cadastros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="central">
+        <section id="Home">
+            <p>Página feita especialmente com estudos de programacao javascript, css e html!</p>
+        </section>
+        <section id="CadastrarS" class="CadastrarS">
+            <h1 id ="titulo">Cadastrar</h1>  
+                <label>Nome:</label>
+                <input id="entradaNome" type="text" class="Textbox" onfocus="limparCampoNome()" value="Digite o nome aqui" ></input><br/>
+                <label>Idade:</label>
+                <input id="entradaIdade" type="number" class="Textbox" onfocus="limpaCampoIdade()" value="Digite a idade aqui" ></input>
+                <input type="submit" id="botao" class="button" onclick="Salvar()" value="Cadastrar" ></input> 
+        </section>
+        <section id="VerificarS" class="VerificarS">
+            <h1>Verificar Usuario</h1>
+            <label>Digite o usuario que deseja procurar:</label><br/>
+            <input id="Buscar"type="" class="Textbox" onfocus="limpaCampoBuscar()" value="Digite aqui o Usuário" ></input>
+            <input type="submit" id="botao1" class="button" onclick="VerificarUsuarios()" value="Buscar" ></input>
+        </section>
+        <section id="ListarS" class="ListarS">
+            <div class="table-responsive">
+                <h1>Lista de Cadastros</h1>
+                <table class="tabela">
+                    <thead Class="colunaP">
+                        <tr id="Parametros">
+                            <th scope="col">Nome</th>
+                            <th scope="col">Idade</th>
+                        </tr>
+                    </thead>
+                    <tbody id="BodyTabela" class="colunaT" >  
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section id="ModificarS" class="ModificarS">
+            <h1>Modificar Usuario</h1>
+            <label id="labelModicador" >Digite o usuario que deseja Modificar:</label><br/>
+            <input id="Modificador"type="" class="Textbox" onfocus="limparModificar()" value="Digite aqui o Usuário" ></input>
+            <input id="ModificarNome"type="" class="Textbox" onfocus="limparModificarNome()" value="Digite aqui seu novo nome" ></input>
+            <input id="ModificarIdade"type="" class="Textbox" onfocus="limparModificarIdade()" value="Digite aqui sua nova idade" ></input>
+            <input type="submit" id="botao4" class="button"   onclick="Modificar()" value="Modificar" ></input>
+        </section>
+        <section id="FiltrarS" class="FiltrarS">
+            <h1>Filtrar Usuario</h1>
+            <label>Digite o usuario que deseja filtrar:</label><br/>
+            <input id="Filtro" type="text" class="Textbox"  onfocus="limparFiltro()" value="Digite aqui o Usuário" ></input>
+            <input type="submit" id="botao3" class="button" onclick="Filtrar()" value="Filtrar" ></input>
+        <div id="filtroResultado" >
+            <h3 id="filtroResultado1"></h3>
+        </div>      
+        </section>
+    </main>
+    
+    <footer class="grid-container-footer">
+        <hr class="Separador">  
+        <p class="footer-p"> &copy; Desenvolvido por Marcelo Augusto - 2022</p>
+
+    </footer>
+
 </body>
-</html>
