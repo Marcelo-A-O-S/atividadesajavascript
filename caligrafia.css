@@ -1,0 +1,17 @@
+h1
+{
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+label
+{
+    padding: 5px;
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p
+{
+    padding: 5px;
+    font-size: medium;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
