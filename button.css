@@ -1,0 +1,15 @@
+.button
+{
+    color: white;
+    background-color: aqua;
+    border: 7px 12px;
+    border-color: transparent;
+    padding: 10px;
+    border-radius: 10px 10px 10px;
+    align-items: center;
+
+}
+.button:hover
+{
+    color: gold;
+}
