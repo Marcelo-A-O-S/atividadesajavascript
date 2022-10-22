@@ -1,3 +1,5 @@
+
+
 let Usuario = new Array()
 let Idade = new Array()
 function ListarTabela()
@@ -71,6 +73,10 @@ function limpaCampoBuscar()
 {
     document.getElementById("Buscar").value =""
 }
+function limpaCampoDeletar()
+{
+    document.getElementById("BuscarD").value =""
+}
 function limparFiltro()
 {
     document.getElementById("Filtro").value =""
@@ -134,4 +140,24 @@ function Salvar(){
     Idade.push(idade)
     alert("O usuário " + nome +" foi cadastrado")
     
+}
+function Deletar()
+{
+    var busca = document.getElementById("BuscarD").value
+    var status = "falso"
+    var indice = Usuario.length + 1
+
+    for (let i = 0; i < indice; i++) {
+        if(busca === Usuario[i])
+        {
+            
+            alert("O usuario "+Usuario[i]+" foi deletado com sucesso")
+            status = "verdadeiro"
+            Usuario.splice(i, 1)
+        }     
+    }
+    if(status === "falso")
+    {
+        alert("O usuario "+busca+" nao está cadastrado")
+    }
 }
