@@ -10,6 +10,7 @@
     <link rel="stylesheet"  href="https://marcelo-a-o-s.github.io/atividadesajavascript/navegacao.css" type="">
     <link rel="stylesheet"  href="https://marcelo-a-o-s.github.io/atividadesajavascript/footer.css" type="">
     <link rel="stylesheet"  href="https://marcelo-a-o-s.github.io/atividadesajavascript/tabela.css" type="">
+    <link rel="stylesheet"  href="https://marcelo-a-o-s.github.io/atividadesajavascript/dropdown.css" type="">
     <title>Atividade SA3</title>
 </head>
 <body>
@@ -25,6 +26,19 @@
                 <li class ="nav-item"><a onclick="ModificarS()" href="#">Modificar Usuario</a></li>
                 <li class ="nav-item"><a onclick="FiltrarS()" href="#">Filtrar Usuario</a></li>
                 <li class ="nav-item"><a onclick="ListarS()" href="#">Lista de Cadastros</a></li>
+            </ul>
+            <ul class="Menu-op">
+                <div class="Dropdown">
+                    <a id="btn-drop" class="btn-drop link-drop" href="#" onclick="dropdown()" >Menu</a>
+                </div>
+                <div id="Dropdown-list" class="Dropdown-list">
+                    <li id="li-drop" class="li-drop"><a class="link-drop" href="#Home" onclick="Home()">Home</a></li>
+                    <li id="li-drop2" class="li-drop"><a class="link-drop" onclick="CadastrarS()" href="#Cadastrar">Cadastrar</a></li>
+                    <li id="li-drop3" class ="li-drop"><a class="link-drop" onclick="VerificarS()" href="#Verificar">Verificar Usuario</a></li>
+                    <li id="li-drop4" class ="li-drop"><a class="link-drop" onclick="ModificarS()" href="#Verificar">Modificar Usuario</a></li>
+                    <li id="li-drop5" class ="li-drop"><a class="link-drop" onclick="FiltrarS()" href="#Verificar">Filtrar Usuario</a></li>
+                    <li id="li-drop6" class="li-final"><a class="link-drop" onclick="ListarS()" href="#Verificar">Lista de Cadastros</a></li>
+                </div>
             </ul>
         </nav>
     </header>
@@ -87,5 +101,6 @@
     </footer>
     <script src="https://marcelo-a-o-s.github.io/atividadesajavascript/index.js" ></script>
     <script src="https://marcelo-a-o-s.github.io/atividadesajavascript/navegacao.js" ></script>
+    <script src="https://marcelo-a-o-s.github.io/atividadesajavascript/dropdown.js" ></script>
 
 </body>

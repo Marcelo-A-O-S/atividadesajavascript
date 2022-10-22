@@ -6,6 +6,13 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+.Menu-op
+{
+    display: none;
+    font-size: x-large;
+    
+}
+
 header.layout
 {
     background-color: aqua;
@@ -13,6 +20,85 @@ header.layout
     max-width: 1800px;
     min-width: 280px;
 }
+@media	(max-width:	850px)	{
+    .layout
+    {
+        background-color: aqua;
+        padding: 25px;
+        max-width: 850px;
+        min-width: 280px;
+    }
+    }
+    @media	(max-width:	950px)	{
+        .layout
+        {
+            background-color: aqua;
+            padding: 15px;
+            max-width: 622px;
+            min-width: 280px;
+        }
+        .Menu-op
+        { 
+          font-size: x-large;
+          display: block;
+        }
+        .option
+        {
+            display: flex;
+        }
+        li
+        {
+            display: none;
+        }
+    }
+    @media	(max-width:	622px)	{
+        .layout
+        {
+            background-color: aqua;
+            padding: 15px;
+            max-width: 622px;
+            min-width: 280px;
+        }
+        .Menu-op
+        { 
+          font-size: x-large;
+          display: block;
+        }
+        .option
+        {
+            display: flex;
+        }
+        li
+        {
+            display: none;
+        }
+    }
+    
+    @media	(max-width:	446px)	{
+        .layout
+        {
+            background-color: aqua;
+            padding: 25px;
+            max-width: 446px;
+            min-width: 280px;
+            
+        }
+        li
+        {
+            display: none;
+        }
+
+    }
+    
+    @media	(max-width:	342px)	{
+        .layout
+        {
+            background-color: aqua;
+            padding: 25px;
+            max-width: 280px;
+            min-width: 280px;
+        }
+    }
 li
 {
     list-style: none;
@@ -40,6 +126,7 @@ a:hover
 }
 .logo
 {
+    display: block;
     color: white;
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
